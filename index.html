@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="formcs" >
+
+
+        <div class="p-4 text-center" id="headf">
+            Register Form
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="fname" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="pnumber" placeholder="Phone Number">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ban co dong y voi dieu le truoc khi dang ky  khong</label><br>  
+
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">ban da du 18 tuoi chua hfffffffffffffffffffffffaaaa</label>
+            </div>
+            <div class="row justify-content-end">
+                <button type="button" onclick="addData()" class="btn">REGISTER</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+   <script src="ss1.js"></script>
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+   
+   <script>
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyDa73eFypSyxgH-pIy4aT0MwP6SdJlmSDE",
+       authDomain: "cj48-da183.firebaseapp.com",
+       databaseURL: "https://cj48-da183.firebaseio.com",
+       projectId: "cj48-da183",
+       storageBucket: "cj48-da183.appspot.com",
+       messagingSenderId: "378843451282",
+       appId: "1:378843451282:web:b20cb8992207a18de7fb4b"
+     };
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+   </script>
+    
+</body>
+
+</html>
